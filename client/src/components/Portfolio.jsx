@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 const PartnerCard = ({ name, description, color }) => (
   <motion.div
     whileHover={{ y: -5 }}
-    className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-start"
+    className="bg-white/40 backdrop-blur-xl p-8 rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-white/60 flex flex-col items-start hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-all duration-300"
   >
     <h3 className={`text-xl font-bold mb-4 ${color}`}>{name}</h3>
-    <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-grow">
+    <p className="text-slate-600 text-sm mb-6 flex-grow">
       {description}
     </p>
-    <div className="w-12 h-12 rounded-full border-2 border-dashed border-slate-300 dark:border-slate-600 flex items-center justify-center">
+    <div className="w-12 h-12 rounded-full border-2 border-dashed border-slate-300 flex items-center justify-center">
       <span className="text-xs font-bold text-slate-400">Logo</span>
     </div>
   </motion.div>
