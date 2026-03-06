@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ServicesHero = () => {
   return (
-    <section className="relative py-32 overflow-hidden bg-slate-900 mt-20">
+    <section className="relative py-32 overflow-hidden bg-slate-900">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img

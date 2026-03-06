@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/60 backdrop-blur-xl border-b border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.05)] py-4' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <div className="flex justify-between items-center">
 
@@ -37,12 +37,12 @@ const Navbar = () => {
             <Link to="/services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Services</Link>
 
             {/* Dropdown 1 */}
-            <div className="relative group cursor-pointer flex items-center hover:text-blue-600 transition-colors py-2">
+            <div className="relative group cursor-pointer flex items-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2">
               <span>Fintech</span>
               <FiChevronDown className="ml-1 w-4 h-4" />
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white/70 backdrop-blur-lg border border-white/30 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.1)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
+              <div className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <div className="py-2 flex flex-col">
-                  <Link to="/services/aeps" className="px-4 py-2 hover:bg-white/50 transition-colors">Aeps Service</Link>
+                  <Link to="/services/aeps" className="px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-700">Aeps Service</Link>
                   <Link to="/services/recharge" className="px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-700">Recharge</Link>
                 </div>
               </div>

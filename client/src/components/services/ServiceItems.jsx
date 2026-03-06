@@ -40,7 +40,7 @@ const ServiceItems = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1 }}
-              className="flex flex-col h-full bg-white/40 backdrop-blur-xl rounded-3xl border border-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.05)] overflow-hidden group hover:shadow-[0_12px_48px_rgba(0,0,0,0.1)] transition-all duration-300"
+              className="flex flex-col h-full bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
             >
               <div className="p-10 flex-grow">
                 <div className="flex items-start space-x-6 mb-6">
