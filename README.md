@@ -60,7 +60,7 @@ The frontend application runs on `http://localhost:5173`.
 *   **About Us & Services Pages Developed**: Assembled comprehensive static pages matching target layout.
 *   **Contact Page Developed**: Integrated forms, maps, and information grids.
 *   **UI Tweaks**: Removed rigid background highlights from text and "Company" dropdown from the navbar; enforced light theme default.
-*   **Component Cleanup**: Removed unused/unwanted visual elements like Flexible Pricing Plans & Contact "Reach Out" banners.
+*   **Component Cleanup**: Removed unused/unwanted visual elements like Flexible Pricing Plans & Contact "Reach Out" banners; fixed excessive top whitespace on the Services page.
 *   **Repository Created**: Pushed project to GitHub.
 
 *(This log will be continuously updated as new features are added)*
