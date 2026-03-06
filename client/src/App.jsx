@@ -7,24 +7,10 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
-
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <Router>
-      <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
-        <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
+      <div className="min-h-screen bg-white transition-colors duration-300">
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />

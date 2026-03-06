@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FiSun, FiMoon, FiChevronDown, FiMenu, FiX } from 'react-icons/fi';
+import { FiChevronDown, FiMenu, FiX } from 'react-icons/fi';
 
-const Navbar = ({ darkMode, toggleTheme }) => {
+const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -48,11 +48,6 @@ const Navbar = ({ darkMode, toggleTheme }) => {
               </div>
             </div>
 
-
-
-            <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-              {darkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
-            </button>
             <Link to="/contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact Us</Link>
 
             <Link to="/partner" className="bg-blue-800 hover:bg-blue-900 text-white px-6 py-2.5 rounded-md font-medium transition-colors">
@@ -62,9 +57,6 @@ const Navbar = ({ darkMode, toggleTheme }) => {
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center space-x-4">
-            <button onClick={toggleTheme} className="p-2 rounded-full">
-              {darkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
-            </button>
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="p-2">
               {mobileMenuOpen ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
             </button>
